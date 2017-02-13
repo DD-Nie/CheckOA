@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fonts/glyphicons-halflings-regular.eot">
+    <link href="../css/bootstrap-datetimepicker.min.css" media="screen">
+
+    <title></title>
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <div id="mymodal" class="modal show">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--<button type="button" class="close">x</button>-->
+                        <h3 class="text-center text-default">立项</h3>
+                    </div>
+                    <div class="modal-body">
+                        <!--class="form-horizontal col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"-->
+                        <form action="" role="form">
+                            <fieldset>
+                                <div class=" input-group input-group-sm">
+                                    <span class="input-group-addon">项目名称</span>
+                                    <input class="form-control" type="text" placeholder="请输入项目名称">
+                                </div>
+                                <br/>
+                                <div class="input-group input-group-sm date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                    <span class="input-group-addon">选择时间</span>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                    <input class="form-control" size="16" type="text" value="" readonly>
+                                </div>
+                                <input type="hidden" id="dtp_input2" value="" /><br/>
+                                <div class="input-group input-group-sm">
+                                    <div class="input-group-btn dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           负责人<span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">罗大佑</a></li>
+                                            <li><a href="#">周杰伦</a></li>
+                                            <li><a href="#">黄晓明</a></li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" aria-lable="..." class="form-control">
+                                    <div class="input-group-btn dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            助理<span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">罗大佑</a></li>
+                                            <li><a href="#">周杰伦</a></li>
+                                            <li><a href="#">黄晓明</a></li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" aria-lable="..." class="form-control">
+                                </div><br>
+
+
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="备注信息" rows="5" id="comment"></textarea>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <!--                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>-->
+                        <button type="button" class="btn btn-primary">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+-->
+    <!--    <script type="text/javascript" src="./jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>-->
+    <script type="text/javascript" src="../js/jquery-1.8.3.min.js" charset="UTF-8"></script>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.zh-TW.js" charset="UTF-8"></script>
+
+    <script type="text/javascript">
+        $('.form_datetime').datetimepicker({
+            //language:  'fr',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            showMeridian: 1
+        });
+        $('.form_date').datetimepicker({
+            language: 'fr',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+        $('.form_time').datetimepicker({
+            language: 'fr',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 1,
+            minView: 0,
+            maxView: 1,
+            forceParse: 0
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fonts/glyphicons-halflings-regular.eot">
+
+    <style>
+        .state-success {
+            /*            background: rgb(53, 203, 75);*/
+            background: #cfe9d6;
+        }
+        
+        .state-info {
+            background: rgb(22, 105, 173);
+        }
+        
+        .state-info {
+            background: rgb(22, 105, 173);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">司法鉴定项目</a>
+                </div>
+                <ul class="nav navbar-nav nav-pills">
+                    <li><a href="user.html">首页</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> 管理人</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#logoutModal"><span class="glyphicon glyphicon-log-in"></span> 退出登录</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="page-header text-center">
+            <h3>XXXX法院的委托
+                <div class="dropdown pull-right">
+                    <button type="button" class="btn btn-default dropdown-toggle btn-sm" id="dropdownMenu1" data-toggle="dropdown" ar-a-haspopup="true" aria-expend="true">
+                                    添加
+                                <span class="caret"></span>
+                                </button>
+                    <ul class="dropdown-menu">
+                        <!--                        <li class="dropdown-header">受理</li>-->
+                        <li><a href="shou-li-wei-tuo.html" target="_blank">受理委托</a></li>
+                        <li><a href="fa-bu-chong-zi-liao-han.html" target="_blank">发送补充资料</a></li>
+                        <li><a href="fa-shou-fei-han.html" target="_blank">收费函</a></li>
+                        <li><a href="xian-chang-kan-cha.html" target="_blank">现场勘查</a></li>
+                        <li><a href="zai-ci-kan-cha.html" target="_blank">再次勘察</a></li>
+                        <li><a href="zhuan-jia-gao.html" target="_blank">专家稿</a></li>
+                        <li class="divider" role="separator"></li>
+                        <!--                        <li class="dropdown-header">审核</li>-->
+                        <li><a href="yi-shen.html" target="_blank">一审</a></li>
+                        <li><a href="er-shen.html" target="_blank">二审</a></li>
+                        <li><a href="zhong-shen.html" target="_blank">终审</a></li>
+                        <li class="divider" role="separetor"></li>
+
+                        <li><a href="jian-ding-jie-guo-song-da.html" target="_blank">鉴定结果送达</a></li>
+                        <li class="divider" role="separetor"></li>
+                        <li><a href="yi-yi-han.html" target="_blank">收到异议函</a></li>
+                        <li><a href="yi-yi-han-hui-fu.html" target="_blank">回复异议函</a></li>
+                        <li><a href="chu-ting-zhi-zheng.html" target="_blank">出庭质证</a></li>
+                        <li class="divider" role="separetor"></li>
+                        <li><a href="jie-shu.html" target="_blank">完结</a></li>
+                        <li class="divider" role="separator"></li>
+                        <li><a href="jian-ding-zhong-zhi.html" target="_blank">鉴定终止</a></li>
+
+                    </ul>
+                </div>
+                <!--</div>-->
+            </h3>
+            <h5>负责人&nbsp;:<small>&nbsp;罗大佑</small>&nbsp;&nbsp;助理&nbsp;:<small>&nbsp;黄晓明</small></h5>
+
+        </div>
+
+
+        <div class="alert alert-danger fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>提醒 : </strong>距离项目结束还有2天时间
+        </div>
+
+
+        <div class="clearfix visible-lg visible-md visible-sm"></div>
+
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+                <div class="thumnail">
+                    <!--                    <div class="caption text-center well well-sm state-success">-->
+
+                    <div class="caption text-center well well-sm">
+
+                        <a href="#" class="close" data-toggle="modal" data-target="#closeModal">&times;</a>
+
+                        <h3>收到委托</h3>
+                        <!--                        <img src="../ok010.png" alt="...">-->
+                        <!--                        <span class="glyphicon glyphicon-ok-circle"></span>-->
+                        <p>完成</p>
+                        <!--<p><a href="#" role="button" class="btn btn-primary"><span class="glyphicon glyphicon-ok-sign"></span> 更多设置</a></p>-->
+                        <p><a href="#" role="button" class="btn btn-primary">更多设置</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+                <div class="thumnail">
+                    <!--                    <img src="icon002.png" alt="...">-->
+                    <!--                    <div class="caption text-center well well-sm state-success">-->
+                    <div class="caption text-center well well-sm">
+                        <!--
+<p>
+    <a href="#">
+        <span class="glyphicon glyphicon-remove"></span>
+    </a>
+</p>
+-->
+                        <a href="#" class="close" data-toggle="modal" data-target="#closeModal">&times;</a>
+                        <h3>受理委托</h3>
+                        <p>完成</p>
+                        <p><a href="shou-li-wei-tuo.html" role="button" class="btn btn-primary">更多设置</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+                <div class="thumnail">
+                    <!--                    <img src="icon003.png" alt="...">-->
+                    <div class="caption text-center well well-sm">
+                        <a href="#" class="close">&times;</a>
+                        <h3>发收费函</h3>
+                        <p>完成</p>
+                        <p><a href="#" role="button" class="btn btn-primary">更多设置</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix visible-lg visible-md visible-sm"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+                <div class="thumnail">
+                    <!--                    <img src="icon003.png" alt="...">-->
+                    <div class="caption text-center well well-sm">
+                        <a href="#" class="close">&times;</a>
+                        <h3>到账查询</h3>
+                        <p>完成</p>
+                        <p><a href="#" role="button" class="btn btn-primary">更多设置</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+                <div class="thumnail">
+                    <!--                    <img src="icon003.png" alt="...">-->
+                    <div class="caption text-center well well-sm">
+                        <a href="#" class="close">&times;</a>
+                        <h3>现场勘查</h3>
+                        <p>完成</p>
+                        <p><a href="#" role="button" class="btn btn-primary">更多设置</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+                <div class="thumnail">
+                    <!--                    <img src="icon003.png" alt="...">-->
+                    <div class="caption text-center well well-sm">
+                        <a href="#" class="close">&times;</a>
+                        <h3>专家稿</h3>
+                        <p>完成 </p>
+                        <p><a href="#" role="button" class="btn btn-primary">更多设置</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix visible-lg visible-md visible-sm"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+                <div class="thumnail">
+                    <!--                    <img src="icon003.png" alt="...">-->
+                    <div class="caption text-center well well-sm">
+                        <a href="#" class="close">&times;</a>
+                        <h3>一审</h3>
+                        <p>完成</p>
+                        <p><a href="#" role="button" class="btn btn-primary">更多设置</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+                <div class="thumnail">
+                    <!--                    <img src="icon003.png" alt="...">-->
+                    <div class="caption text-center well well-sm">
+                        <a href="#" class="close">&times;</a>
+                        <h3>二审</h3>
+                        <p>完成</p>
+                        <p><a href="#" role="button" class="btn btn-primary">更多设置</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+                <div class="thumnail">
+                    <!--                    <img src="icon003.png" alt="...">-->
+                    <div class="caption text-center well well-sm">
+                        <a href="#" class="close">&times;</a>
+                        <h3>终审</h3>
+                        <p>完成</p>
+                        <p><a href="#" role="button" class="btn btn-primary">更多设置</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix visible-lg visible-md visible-sm"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+                <div class="thumnail">
+                    <!--                    <img src="icon003.png" alt="...">-->
+                    <div class="caption text-center well well-sm">
+                        <a href="#" class="close">&times;</a>
+                        <h3>制作报告</h3>
+                        <p>完成</p>
+                        <p><a href="#" role="button" class="btn btn-primary">更多设置</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+                <div class="thumnail">
+                    <!--                    <img src="icon003.png" alt="...">-->
+                    <div class="caption text-center well well-sm">
+                        <a href="#" class="close">&times;</a>
+                        <h3>专家签名</h3>
+                        <p>完成</p>
+                        <p><a href="#" role="button" class="btn btn-primary">更多设置</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div id="closeModal" class="modal fade text-center" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--                        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                        <h4 class="modal-title">是否要移除此项</h4>
+                    </div>
+                    <!--
+                    <div class="modal-body">
+<p>是否要移除此项</p>
+</div>
+-->
+                    <!--                    <div class="modal-footer">-->
+                    <br>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button> &nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    </div>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <!--退出登录的弹出框-->
+        <!-- Modal -->
+        <div id="logoutModal" class="modal fade text-center" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--                        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                        <h4 class="modal-title">是否要退出登录</h4>
+                    </div>
+                    <!--
+                    <div class="modal-body">
+<p>是否要移除此项</p>
+</div>
+-->
+                    <!--                    <div class="modal-footer">-->
+                    <br>
+                    <div class="text-center">
+                        <a href="../index.html" type="button" class="btn btn-primary">确定</a> &nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    </div>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="../js/jquery-3.1.1.min.js">
+
+
+    </script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

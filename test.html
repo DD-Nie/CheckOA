@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/glyphicons-halflings-regular.eot">
+
+
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="150">
+    <!-- data-spy="scroll" data-target="#myScrollspy" data-offset="10"-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4" id="myScrollspy">
+                <br>
+                <ul class="nav nav-pills nav-stacked" data-spy="affix">
+                    <li class="active"><a href="#section1">收到委托</a></li>
+                    <li><a href="#section2">受理委托</a></li>
+                    <li><a href="#section3">发补充资料及收费函</a></li>
+                    <li><a href="#section4">到账查询</a></li>
+                    <li><a href="#section5">现场勘查</a></li>
+                    <li><a href="#section6">专家稿</a></li>
+                    <li><a href="#section7">一审</a></li>
+                    <li><a href="#section8">二审</a></li>
+                    <li><a href="#section9">终审</a></li>
+                    <li><a href="#section10">制作报告</a></li>
+                    <li><a href="#section11">专家签名</a></li>
+                    <li><a href="#section12">邮寄报告</a></li>
+                    <li><a href="#section13">收到法院异议函</a></li>
+                    <li><a href="#section14">收到法院出庭函</a></li>
+                    <li><a href="#section15">收费出庭</a></li>
+                    <li><a href="#section16">结束</a></li>
+                </ul>
+                <br>
+                <br>
+                <br>
+
+            </div>
+            <!--右边的列表-->
+            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8">
+                <br>
+                <!--                收到委托部分-->
+                <div id="section1">
+                    <h3 class="page-header">收到委托</h3>
+                    <div class="well well-sm">
+                        <div class="text-center">
+                            <h5>负责人&nbsp;:<small>&nbsp;罗大佑</small>&nbsp;&nbsp;助理&nbsp;:<small>&nbsp;黄晓明</small></h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--                受理委托部分-->
+                <div id="section2">
+                    <h3 class="page-header">受理委托</h3>
+
+                    <div class="row text-center">
+
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">受理</label> &nbsp;&nbsp;&nbsp;
+                            <!--
+</div>
+<div class="radio">
+-->
+                            <label href="#dataCollapse" data-toggle="collapse"><input type="radio" name="optradio">不予受理</label>
+                        </div>
+
+
+                        <!--
+                        <button type="button" class="btn btn-default">取消</button> &nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-primary">确定</button>
+-->
+
+                    </div>
+
+                    <div id="dataCollapse" class="collapse">
+                        <div class="modal-header">
+                            <!--<button type="button" class="close">x</button>-->
+                            <h5 class="text-center text-default">退回函内容</h5>
+                        </div>
+                        <div class="modal-body">
+                            <!--class="form-horizontal col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"-->
+                            <form action="" role="form">
+                                <fieldset>
+                                    <div class=" input-group input-group-sm">
+                                        <span class="input-group-addon">退回原因</span>
+                                        <input class="form-control" type="text" placeholder="请输入退回原因">
+                                    </div>
+                                    <br/>
+                                    <div class="input-group input-group-sm date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                        <span class="input-group-addon">退回时间</span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <input class="form-control" size="16" type="text" value="" readonly>
+                                    </div>
+                                    <input type="hidden" id="dtp_input2" value="" /><br/>
+                                    <div class="input-group input-group-sm">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           送达方式<span class="caret"></span>
+                                        </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">快递</a></li>
+                                                <li><a href="#">传真</a></li>
+                                            </ul>
+                                        </div>
+                                        <input type="text" aria-lable="..." class="form-control">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="button">
+                                            快递单号或者传真号
+                                        </button>
+                                        </div>
+                                        <input type="text" aria-lable="..." class="form-control">
+                                    </div><br>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="text-right">
+                        <!--                        <button type="button" class="btn btn-default btn-sm">取消</button> &nbsp;&nbsp;&nbsp;-->
+                        <button type="button" class="btn btn-primary btn-sm">发送</button>
+                    </div>
+
+
+                </div>
+                <div id="section3">
+                    <h3 class="page-header">发补充资料及收费函</h3>
+
+                    <form action="" role="form">
+                        <fieldset>
+                            <br/>
+                            <div class="input-group input-group-sm date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <span class="input-group-addon">发送时间</span>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                <input class="form-control" size="16" type="text" value="" readonly>
+                            </div>
+                            <input type="hidden" id="dtp_input2" value="" /><br/>
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           送达方式<span class="caret"></span>
+                                        </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">快递</a></li>
+                                        <li><a href="#">传真</a></li>
+                                    </ul>
+                                </div>
+                                <input type="text" aria-lable="..." class="form-control">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                            快递单号或者传真号
+                                        </button>
+                                </div>
+                                <input type="text" aria-lable="..." class="form-control">
+                            </div><br>
+                        </fieldset>
+                    </form>
+
+
+                </div>
+                <div id="section4">
+                    <h3 class="page-header">到账查询</h3>
+
+                    <form action="" role="form">
+                        <fieldset>
+                            <br/>
+                            <div class="input-group input-group-sm date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <span class="input-group-addon">收到时间</span>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                <input class="form-control" size="16" type="text" value="" readonly>
+                            </div>
+                            <input type="hidden" id="dtp_input2" value="" /><br/>
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           来款方式<span class="caret"></span>
+                                        </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">现金</a></li>
+                                        <li><a href="#">转账</a></li>
+                                    </ul>
+                                </div>
+                                <input type="text" aria-lable="..." class="form-control">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                            来款单位/个人
+                                        </button>
+                                </div>
+                                <input type="text" aria-lable="..." class="form-control">
+                            </div><br>
+                        </fieldset>
+                    </form>
+
+
+
+                    <div class="text-center">
+                        <label class="checkbox-inline"><input type="checkbox" value="" href="#checkCollapse" data-toggle="collapse">鉴定终止
+                        </label>
+
+                    </div>
+
+
+                    <div id="checkCollapse" class="collapse">
+                        <div class="modal-header">
+                            <!--<button type="button" class="close">x</button>-->
+                            <h5 class="text-left text-default">退回函内容</h5>
+                        </div>
+                        <div class="modal-body">
+                            <!--class="form-horizontal col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"-->
+                            <form action="" role="form">
+                                <fieldset>
+                                    <div class=" input-group input-group-sm">
+                                        <span class="input-group-addon">退回原因</span>
+                                        <input class="form-control" type="text" placeholder="请输入退回原因">
+                                    </div>
+                                    <br/>
+                                    <div class="input-group input-group-sm date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                        <span class="input-group-addon">退回时间</span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <input class="form-control" size="16" type="text" value="" readonly>
+                                    </div>
+                                    <input type="hidden" id="dtp_input2" value="" /><br/>
+                                    <div class="input-group input-group-sm">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           送达方式<span class="caret"></span>
+                                        </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">快递</a></li>
+                                                <li><a href="#">传真</a></li>
+                                            </ul>
+                                        </div>
+                                        <input type="text" aria-lable="..." class="form-control">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="button">
+                                            快递单号或者传真号
+                                        </button>
+                                        </div>
+                                        <input type="text" aria-lable="..." class="form-control">
+                                    </div><br>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <br>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-primary btn-sm">发送</button>
+                    </div>
+
+
+                </div>
+                <div id="section5">
+                    <h3 class="page-header">现场勘查</h3>
+
+                    <form action="" role="form">
+                        <fieldset>
+                            <br/>
+                            <div class="input-group input-group-sm date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <span class="input-group-addon">勘察时间</span>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                <input class="form-control" size="16" type="text" value="" readonly>
+                            </div>
+                            <input type="hidden" id="dtp_input2" value="" /><br/>
+
+
+                            <div class=" input-group input-group-sm">
+                                <span class="input-group-addon">鉴定人员</span>
+                                <input class="form-control" type="text" placeholder="请输入鉴定人员">
+                            </div>
+                            <br>
+                        </fieldset>
+                    </form>
+
+                    <div class="text-center">
+                        <label class="checkbox-inline"><input type="checkbox" value="" href="#checkCollapse1" data-toggle="collapse">鉴定终止
+                        </label>
+
+                    </div>
+
+
+                    <div id="checkCollapse1" class="collapse">
+                        <div class="modal-header">
+                            <!--<button type="button" class="close">x</button>-->
+                            <h5 class="text-center text-default">退回函内容</h5>
+                        </div>
+                        <div class="modal-body">
+                            <!--class="form-horizontal col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"-->
+                            <form action="" role="form">
+                                <fieldset>
+                                    <div class=" input-group input-group-sm">
+                                        <span class="input-group-addon">退回原因</span>
+                                        <input class="form-control" type="text" placeholder="请输入退回原因">
+                                    </div>
+                                    <br/>
+                                    <div class="input-group input-group-sm date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                        <span class="input-group-addon">退回时间</span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <input class="form-control" size="16" type="text" value="" readonly>
+                                    </div>
+                                    <input type="hidden" id="dtp_input2" value="" /><br/>
+                                    <div class="input-group input-group-sm">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           送达方式<span class="caret"></span>
+                                        </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">快递</a></li>
+                                                <li><a href="#">传真</a></li>
+                                            </ul>
+                                        </div>
+                                        <input type="text" aria-lable="..." class="form-control">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="button">
+                                            快递单号或者传真号
+                                        </button>
+                                        </div>
+                                        <input type="text" aria-lable="..." class="form-control">
+                                    </div><br>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-primary btn-sm">发送</button>
+                    </div>
+
+
+
+
+
+                </div>
+                <div id="section6">
+                    <h3 class="page-header">专家稿</h3>
+                    <form action="" role="form">
+                        <fieldset>
+                            <br/>
+                            <div class="input-group input-group-sm date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <span class="input-group-addon">提交时间</span>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                <input class="form-control" size="16" type="text" value="" readonly>
+                            </div>
+                            <input type="hidden" id="dtp_input2" value="" /><br/>
+                            <br>
+                        </fieldset>
+                    </form>
+
+
+                </div>
+                <div id="section7">
+                    <h1>一审</h1>
+                    <p>The restaurant manager who speaks with poise and grace to the patron complaining loudly about the wait service. The levelheaded friend you call in your greatest times of need. The compassionate but composed rescue worker who aids victims after a natural catastrophe. The partner who angers rarely, forgives easily, and assumes accountability for their actions. The successful CEO who balances her profession, her family responsibilities, and her personal hobbies with equal measures of calm and confidence.</p>
+                </div>
+                <div id="section8">
+                    <h1>二审</h1>
+                    <p>The restaurant manager who speaks with poise and grace to the patron complaining loudly about the wait service. The levelheaded friend you call in your greatest times of need. The compassionate but composed rescue worker who aids victims after a natural catastrophe. The partner who angers rarely, forgives easily, and assumes accountability for their actions. The successful CEO who balances her profession, her family responsibilities, and her personal hobbies with equal measures of calm and confidence.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>异议函回复</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fonts/glyphicons-halflings-regular.eot">
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+
+        <div class="page-header">
+            <h2 class="text-center">回复异议函</h2>
+        </div>
+        <!--class="form-horizontal col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"-->
+        <form action="" role="form">
+            <fieldset>
+
+                <div class="input-group input-group-sm date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                    <span class="input-group-addon">发送时间</span>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                    <input class="form-control" size="16" type="text" value="" readonly>
+                </div>
+                <input type="hidden" id="dtp_input2" value="" /><br/>
+                <div class="input-group input-group-sm">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           送达方式<span class="caret"></span>
+                                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">快递</a></li>
+                            <li><a href="#">传真</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" aria-lable="..." class="form-control">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                                            快递单号或者传真号
+                                        </button>
+                    </div>
+                    <input type="text" aria-lable="..." class="form-control">
+                </div><br>
+            </fieldset>
+        </form>
+
+        <div class="text-center">
+            <!--                        <button type="button" class="btn btn-default btn-sm">取消</button> &nbsp;&nbsp;&nbsp;-->
+            <button type="button" class="btn btn-primary btn-sm">提交</button>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

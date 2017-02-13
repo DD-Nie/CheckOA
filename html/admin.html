@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高级管理页</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fonts/glyphicons-halflings-regular.eot">
+    <!--    <link rel="stylesheet" href="html/add.html">-->
+    <link href="../css/bootstrap-datetimepicker.min.css" media="screen">
+
+
+
+    <style type="text/css">
+        .navbar-default {}
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">司法鉴定项目</a>
+                </div>
+                <ul class="nav navbar-nav nav-pills">
+                    <li><a href="#">首页</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">负责人
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="user.html">罗大佑</a></li>
+                            <li><a href="user.html">周杰伦</a></li>
+                            <li><a href="user.html">黄晓明</a></li>
+                        </ul>
+                    </li>
+                    <!--                    <li><a href="#">添加负责人</a></li>-->
+                    <!--                    <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>-->
+                    <li><a role="button" data-toggle="modal" data-target="#lixiangModal">立项</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> 高级管理</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#logoutModal"><span class="glyphicon glyphicon-log-in"></span> 退出登录</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+
+
+            <!--左边的侧边栏-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-primary text-center">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-parent="#accordion" href="#collapse1">
+                                    全部项目
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="panel panel-primary text-center">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                    罗大佑
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                                <div class="list-group">
+                                    <a class="list-group-item" href="#">作为负责人</a>
+                                    <a class="list-group-item" href="#">作为助理</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary text-center">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                    周杰伦
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a class="list-group-item" href="#">作为负责人</a>
+                                    <a class="list-group-item" href="#">作为助理</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary text-center">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                    黄晓明
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a class="list-group-item" href="#">作为负责人</a>
+                                    <a class="list-group-item" href="#">作为助理</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--右边的列表-->
+
+            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8">
+
+                <ul class="list-inline nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">列表</a></li>
+                    <li><a data-toggle="tab" href="#menu1">急需处理</a></li>
+                    <li><a data-toggle="tab" href="#menu2">提醒</a></li>
+                    <li><a data-toggle="tab" href="#menu3">等待</a></li>
+                    <li><a data-toggle="tab" href="#menu4">已完成</a></li>
+                </ul>
+                <br/>
+
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+
+                        <div class="list-group">
+
+                            <a href="detail.html" class="list-group-item list-group-item-info">
+                                <h4 class="list-group-item-heading">
+                                    这里是项目的名称 <small class="pull-right">剩余时间: 3天</small>
+                                </h4>
+                                <p class="list-group-item-text">
+                                    状态: 发送收费函
+                                </p>
+                            </a>
+                            <a href="detail.html" class="list-group-item list-group-item-warning">
+                                <!--                            <a href="html/detail.html" class="list-group-item list-group-item-info">-->
+
+                                <h4 class="list-group-item-heading">需要提醒的项目<small class="pull-right">剩余时间: 3天</small></h4>
+                                <p class="list-group-item-text">状态 : 一审</p>
+                            </a>
+                            <a href="detail.html" class="list-group-item list-group-item-info">
+                                <h4 class="list-group-item-heading">
+                                    等待状态的项目<small class="pull-right">剩余时间: 3天</small>
+                                </h4>
+                                <p class="list-group-item-text">
+                                    状态: 等待发送资料函
+                                </p>
+                            </a>
+                            <a href="detail.html" class="list-group-item list-group-item-danger">
+                                <h4 class="list-group-item-heading">
+                                    这是项目的名称<small class="pull-right">剩余时间: 1天</small>
+                                </h4>
+                                <p class="list-group-item-text">
+                                    这里是项目的备注信息
+                                </p>
+
+                            </a>
+                            <a href="detail.html" class="list-group-item list-group-item-success">
+                                <h4 class="list-group-item-heading">
+                                    已经完结的项目 <small class="pull-right">完结</small>
+                                </h4>
+                                <p class="list-group-item-text">
+                                    这里是项目的备注内容
+                                </p>
+                            </a>
+                            <a href="detail.html" class="list-group-item list-group-item-success">
+                                <h4 class="list-group-item-heading">
+                                    司法鉴定项目名称<small class="pull-right">完结</small>
+                                </h4>
+                                <p class="list-group-item-text">
+                                    司法鉴定项目的备注信息
+                                </p>
+                            </a>
+
+                            <a href="detail.html" class="list-group-item list-group-item-success">
+                                <h4 class="list-group-item-heading">
+                                    Third List Group Item Heading<small class="pull-right">完结</small>
+                                </h4>
+                                <p class="list-group-item-text">
+                                    List Group Item Text
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="menu1" class="tab-pane fade">
+                        <div class="list-group">
+                            <a href="detail.html" class="list-group-item list-group-item-danger">
+                                <h4 class="list-group-item-heading">
+                                    这是项目的名称 RedColor stands for Danger
+                                </h4>
+                                <p class="list-group-item-text">
+                                    这里是项目的备注信息
+                                </p>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="menu2" class="tab-pane fade">
+                        <div class="list-group">
+                            <a href="detail.html" class="list-group-item list-group-item-warning">
+                                <h4 class="list-group-item-heading">需要提醒的项目</h4>
+                                <p class="list-group-item-text">
+                                    这里是项目的备注信息
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                        <div class="list-group">
+
+                            <a href="detail.html" class="list-group-item list-group-item-info">
+                                <h4 class="list-group-item-heading">
+                                    等待状态的项目
+                                </h4>
+                                <p class="list-group-item-text">
+                                    List Group Item Text
+                                </p>
+                            </a>
+                            <a href="detail.html" class="list-group-item list-group-item-info">
+                                <h4 class="list-group-item-heading">
+                                    等待状态的项目
+                                </h4>
+                                <p class="list-group-item-text">
+                                    List Group Item Text
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div id="menu4" class="tab-pane fade">
+                        <div class="list-group">
+                            <a href="detail.html" class="list-group-item list-group-item-success">
+                                <h4 class="list-group-item-heading">
+                                    已经完结的项目
+                                </h4>
+                                <p class="list-group-item-text">
+                                    这里是项目的备注内容
+                                </p>
+                            </a>
+                            <a href="detail.html" class="list-group-item list-group-item-success">
+                                <h4 class="list-group-item-heading">
+                                    司法鉴定项目名称
+                                </h4>
+                                <p class="list-group-item-text">
+                                    司法鉴定项目的备注信息
+                                </p>
+                            </a>
+
+                            <a href="detail.html" class="list-group-item list-group-item-success">
+                                <h4 class="list-group-item-heading">
+                                    Third List Group Item Heading
+                                </h4>
+                                <p class="list-group-item-text">
+                                    List Group Item Text
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <br/>
+                <br/>
+                <!--底部的分页器-->
+                <div class="text-center">
+                    <ul class="pagination">
+                        <li><a href="#">上一页</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">下一页</a></li>
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+            <!--右边的列表-->
+
+
+        </div>
+        <!--row-->
+
+
+
+
+        <!--退出登录的弹出框-->
+        <!-- Modal -->
+        <div id="logoutModal" class="modal fade text-center" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--                        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                        <h4 class="modal-title">是否要退出登录</h4>
+                    </div>
+                    <!--
+                    <div class="modal-body">
+<p>是否要移除此项</p>
+</div>
+-->
+                    <!--                    <div class="modal-footer">-->
+                    <br>
+                    <div class="text-center">
+                        <a href="../index.html" type="button" class="btn btn-primary">确定</a> &nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    </div>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!--立项的弹出框-->
+        <div class="text-center">
+            <div id="lixiangModal" class="modal fade in">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!--<button type="button" class="close">x</button>-->
+                            <h3 class="text-center text-default">立项</h3>
+                        </div>
+                        <div class="modal-body">
+                            <!--class="form-horizontal col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"-->
+                            <form action="" role="form">
+                                <fieldset>
+                                    <div class=" input-group input-group-sm">
+                                        <span class="input-group-addon">项目名称</span>
+                                        <input class="form-control" type="text" placeholder="请输入项目名称">
+                                    </div>
+                                    <br/>
+                                    <div class="input-group input-group-sm date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                        <span class="input-group-addon">选择时间</span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <input class="form-control" size="16" type="text" value="" readonly>
+                                    </div>
+                                    <input type="hidden" id="dtp_input2" value="" /><br/>
+                                    <div class="input-group input-group-sm">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           负责人<span class="caret"></span>
+                                        </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">罗大佑</a></li>
+                                                <li><a href="#">周杰伦</a></li>
+                                                <li><a href="#">黄晓明</a></li>
+                                            </ul>
+                                        </div>
+                                        <input type="text" aria-lable="..." class="form-control">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            助理<span class="caret"></span>
+                                        </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">罗大佑</a></li>
+                                                <li><a href="#">周杰伦</a></li>
+                                                <li><a href="#">黄晓明</a></li>
+                                            </ul>
+                                        </div>
+                                        <input type="text" aria-lable="..." class="form-control">
+                                    </div><br>
+
+
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="备注信息" rows="5" id="comment"></textarea>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <div class="text-center">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--    <script src="js/jquery-3.1.1.min.js"></script>-->
+    <!--    <script src="js/bootstrap.min.js"></script>-->
+
+
+    <!--立项的弹出框-->
+    <script type="text/javascript" src="../js/jquery-1.8.3.min.js" charset="UTF-8"></script>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <!--    <script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.zh-TW.js" charset="UTF-8"></script>-->
+
+    <script type="text/javascript">
+        $('.form_datetime').datetimepicker({
+            //language:  'fr',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            showMeridian: 1
+        });
+        $('.form_date').datetimepicker({
+            language: 'fr',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+        $('.form_time').datetimepicker({
+            language: 'fr',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 1,
+            minView: 0,
+            maxView: 1,
+            forceParse: 0
+        });
+    </script>
+
+    <script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.zh-TW.js" charset="UTF-8"></script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
